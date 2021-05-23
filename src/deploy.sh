@@ -31,7 +31,7 @@ fi
 
 git checkout $TARGET_BRANCH
 echo "::[notice] # Move the generated JSON file to the newly-checked-out repo, to be committed and pushed"
-mv ../docs $CURRENT_BRANCH
+mv ../docs .
 echo "::[notice] # Commit and push"
 git add .
 git config user.name "${GITHUB_ACTOR}"
