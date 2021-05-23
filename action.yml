@@ -1,5 +1,7 @@
 name: 'Docs'
 description: 'Deploys docs to the /docs branch.'
 runs:
-  using: 'node12'
-  main: 'src/index.js'
+  using: "composite"
+   steps:
+     - run: ${{ github.action_path }}/src/deploy.sh
+       shell: bash
