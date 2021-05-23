@@ -2,6 +2,6 @@ name: 'Docs'
 description: 'Deploys docs to the /docs branch.'
 runs:
   using: "composite"
-   steps:
-     - run: ${{ github.action_path }}/src/deploy.sh
-       shell: bash
+  steps:
+    - run: ${{ github.action_path }}/src/deploy.sh
+      shell: bash
