@@ -30,7 +30,7 @@ if [ ! "$(git ls-remote origin $TARGET_BRANCH)" ]; then
 fi
 
 git checkout $TARGET_BRANCH
-echo "::[notice] # Move the generated JSON file to the newly-checked-out repo, to be committed and pushed"
+echo "::[notice] # Move the generated documentation to the newly-checked-out repo, to be committed and pushed"
 rm -rf docs
 mv ../docs .
 echo "::[notice] # Commit and push"
